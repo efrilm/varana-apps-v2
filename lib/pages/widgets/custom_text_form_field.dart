@@ -63,7 +63,7 @@ class CustomIconTextFormField extends StatelessWidget {
         borderRadius: BorderRadius.circular(defaultRadius),
       ),
       padding: const EdgeInsets.symmetric(
-        horizontal: 15,
+        horizontal: 4,
         vertical: 2,
       ),
       child: TextFormField(
@@ -77,7 +77,7 @@ class CustomIconTextFormField extends StatelessWidget {
             fontWeight: light,
           ),
           border: InputBorder.none,
-          suffixIcon: Icon(
+          prefixIcon: Icon(
             Icons.search,
             color: greyColor,
             size: 26,
