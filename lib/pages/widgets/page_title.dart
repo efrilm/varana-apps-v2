@@ -32,7 +32,7 @@ class PageTitle extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      'View All',
+                      'Lihat Semuanya',
                       style: greenTextStyle.copyWith(
                         fontWeight: light,
                         fontSize: 12,

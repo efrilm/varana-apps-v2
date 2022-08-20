@@ -23,7 +23,7 @@ class CustomAppBar extends StatelessWidget {
             vertical: 14,
           ),
           child: Text(
-            'Leads',
+            text,
             style: headingTextStyle.copyWith(
               color: greenColor,
               fontSize: 24,

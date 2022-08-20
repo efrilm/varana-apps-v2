@@ -56,7 +56,7 @@ class SalesDashboardPage extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    'Have a nice day',
+                    'Selamat Pagi',
                     style: greyTextStyle.copyWith(
                       fontWeight: light,
                       fontSize: 12,
@@ -81,7 +81,7 @@ class SalesDashboardPage extends StatelessWidget {
           left: defaultMargin,
           right: defaultMargin,
         ),
-        hint: 'Search Your Data',
+        hint: 'Cari data kamu disini',
       );
     }
 
@@ -108,9 +108,9 @@ class SalesDashboardPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'I hope today is your lucky day',
+                  'Semoga hari ini adalah hari keberuntunganmu',
                   style: headingTextStyle.copyWith(
-                    fontSize: 16,
+                    fontSize: 12,
                     fontWeight: medium,
                   ),
                 ),
@@ -125,21 +125,21 @@ class SalesDashboardPage extends StatelessWidget {
               height: 10,
             ),
             const HomeInformationItem(
-              title: 'Position',
+              title: 'Posisi',
               content: 'Sales Executive',
             ),
             const SizedBox(
               height: 4,
             ),
             const HomeInformationItem(
-              title: 'Join Date',
+              title: 'Tanggal Bergabung',
               content: '12 Jun 2022',
             ),
             const SizedBox(
               height: 4,
             ),
             const HomeInformationItem(
-              title: 'Sold',
+              title: 'Penjualan',
               content: '2 Units',
             ),
           ],
@@ -158,7 +158,7 @@ class SalesDashboardPage extends StatelessWidget {
         child: Column(
           children: [
             const PageTitle(
-              title: 'Your Amount Leads',
+              title: 'Jumlah Lead Kamu',
             ),
             const SizedBox(
               height: 20,
@@ -168,17 +168,17 @@ class SalesDashboardPage extends StatelessWidget {
               children: const [
                 AmounItem(
                   amount: 120,
-                  title: 'Daily',
+                  title: 'Harian',
                 ),
                 AmountDivider(),
                 AmounItem(
                   amount: 120,
-                  title: 'Weekly',
+                  title: 'Mingguan',
                 ),
                 AmountDivider(),
                 AmounItem(
                   amount: 120,
-                  title: 'Monthly',
+                  title: 'Bulanan',
                 ),
               ],
             ),
@@ -297,7 +297,7 @@ class SalesDashboardPage extends StatelessWidget {
         child: Column(
           children: [
             const PageTitle(
-              title: 'Features',
+              title: 'Fitur',
               isView: false,
             ),
             const SizedBox(
@@ -307,17 +307,17 @@ class SalesDashboardPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 FeatureItem(
-                  title: 'Absent',
+                  title: 'Absen',
                   icon: Icons.login,
                   onTap: () {},
                 ),
                 FeatureItem(
-                  title: 'Go Home',
+                  title: 'Pamit',
                   icon: Icons.logout,
                   onTap: () {},
                 ),
                 FeatureItem(
-                  title: 'Stock',
+                  title: 'Stok',
                   icon: Icons.home_work_outlined,
                   onTap: () {},
                 ),
@@ -338,7 +338,7 @@ class SalesDashboardPage extends StatelessWidget {
             Padding(
               padding: EdgeInsets.symmetric(horizontal: defaultMargin),
               child: const PageTitle(
-                title: 'Queue Sales',
+                title: 'Antrian Sales Sales',
               ),
             ),
             const SizedBox(
@@ -377,7 +377,7 @@ class SalesDashboardPage extends StatelessWidget {
         child: Column(
           children: const [
             PageTitle(
-              title: 'Recently Leads',
+              title: 'Lead baru - baru ini',
               isView: false,
             ),
             SizedBox(
