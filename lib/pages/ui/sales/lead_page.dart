@@ -35,6 +35,201 @@ class _SalesLeadPageState extends State<SalesLeadPage>
       return const CustomAppBar(text: 'Leads');
     }
 
+    Widget tabBar() {
+      return TabBar(
+        padding: EdgeInsets.symmetric(
+          vertical: defaultMargin,
+        ),
+        controller: _tabController,
+        unselectedLabelColor: greenColor,
+        unselectedLabelStyle: greenTextStyle,
+        indicatorSize: TabBarIndicatorSize.label,
+        indicator: BoxDecoration(
+          borderRadius: BorderRadius.circular(8),
+          color: greenColor,
+        ),
+        labelStyle: whiteTextStyle.copyWith(
+          fontWeight: semiBold,
+        ),
+        labelColor: whiteColor,
+        isScrollable: true,
+        tabs: [
+          Tab(
+            child: Container(
+              padding: const EdgeInsets.symmetric(
+                vertical: 8,
+                horizontal: 22,
+              ),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: greenColor, width: 1),
+              ),
+              child: const Align(
+                alignment: Alignment.center,
+                child: Text(
+                  "Pending",
+                ),
+              ),
+            ),
+          ),
+          Tab(
+            child: Container(
+              padding: const EdgeInsets.symmetric(
+                vertical: 8,
+                horizontal: 22,
+              ),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: greenColor, width: 1),
+              ),
+              child: const Align(
+                alignment: Alignment.center,
+                child: Text(
+                  "Semua",
+                ),
+              ),
+            ),
+          ),
+          Tab(
+            child: Container(
+              padding: const EdgeInsets.symmetric(
+                vertical: 8,
+                horizontal: 22,
+              ),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: greenColor, width: 1),
+              ),
+              child: const Align(
+                alignment: Alignment.center,
+                child: Text(
+                  "Baru",
+                ),
+              ),
+            ),
+          ),
+          Tab(
+            child: Container(
+              padding: const EdgeInsets.symmetric(
+                vertical: 8,
+                horizontal: 22,
+              ),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: greenColor, width: 1),
+              ),
+              child: const Align(
+                alignment: Alignment.center,
+                child: Text(
+                  "Follow Up",
+                ),
+              ),
+            ),
+          ),
+          Tab(
+            child: Container(
+              padding: const EdgeInsets.symmetric(
+                vertical: 8,
+                horizontal: 22,
+              ),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: greenColor, width: 1),
+              ),
+              child: const Align(
+                alignment: Alignment.center,
+                child: Text(
+                  "Reservasi",
+                ),
+              ),
+            ),
+          ),
+          Tab(
+            child: Container(
+              padding: const EdgeInsets.symmetric(
+                vertical: 8,
+                horizontal: 22,
+              ),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: greenColor, width: 1),
+              ),
+              child: const Align(
+                alignment: Alignment.center,
+                child: Text(
+                  "Booking",
+                ),
+              ),
+            ),
+          ),
+        ],
+      );
+    }
+
+    Widget tabBarView() {
+      return Expanded(
+        child: TabBarView(
+          controller: _tabController,
+          children: [
+            ListView(
+              padding: EdgeInsets.symmetric(horizontal: defaultMargin),
+              children: const [
+                LeadCard(),
+                LeadCard(),
+                LeadCard(),
+                LeadCard(),
+              ],
+            ),
+            ListView(
+              padding: EdgeInsets.symmetric(horizontal: defaultMargin),
+              children: const [
+                LeadCard(),
+                LeadCard(),
+                LeadCard(),
+                LeadCard(),
+              ],
+            ),
+            ListView(
+              padding: EdgeInsets.symmetric(horizontal: defaultMargin),
+              children: const [
+                LeadCard(),
+                LeadCard(),
+                LeadCard(),
+                LeadCard(),
+              ],
+            ),
+            ListView(
+              padding: EdgeInsets.symmetric(horizontal: defaultMargin),
+              children: const [
+                LeadCard(),
+                LeadCard(),
+                LeadCard(),
+                LeadCard(),
+              ],
+            ),
+            ListView(
+              padding: EdgeInsets.symmetric(horizontal: defaultMargin),
+              children: const [
+                LeadCard(),
+                LeadCard(),
+                LeadCard(),
+                LeadCard(),
+              ],
+            ),
+            ListView(
+              padding: EdgeInsets.symmetric(horizontal: defaultMargin),
+              children: const [
+                LeadCard(),
+                LeadCard(),
+                LeadCard(),
+                LeadCard(),
+              ],
+            ),
+          ],
+        ),
+      );
+    }
+
     return SafeArea(
       child: Scaffold(
         backgroundColor: backgroundColor,
@@ -42,198 +237,8 @@ class _SalesLeadPageState extends State<SalesLeadPage>
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             header(),
-            TabBar(
-              padding: EdgeInsets.symmetric(
-                vertical: defaultMargin,
-              ),
-              controller: _tabController,
-              unselectedLabelColor: greenColor,
-              unselectedLabelStyle: greenTextStyle,
-              indicatorSize: TabBarIndicatorSize.label,
-              indicator: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                color: greenColor,
-              ),
-              labelStyle: whiteTextStyle.copyWith(
-                fontWeight: semiBold,
-              ),
-              labelColor: whiteColor,
-              isScrollable: true,
-              tabs: [
-                Tab(
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 8,
-                      horizontal: 22,
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: greenColor, width: 1),
-                    ),
-                    child: const Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        "Pending",
-                      ),
-                    ),
-                  ),
-                ),
-                Tab(
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 8,
-                      horizontal: 22,
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: greenColor, width: 1),
-                    ),
-                    child: const Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        "Semua",
-                      ),
-                    ),
-                  ),
-                ),
-                Tab(
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 8,
-                      horizontal: 22,
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: greenColor, width: 1),
-                    ),
-                    child: const Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        "Baru",
-                      ),
-                    ),
-                  ),
-                ),
-                Tab(
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 8,
-                      horizontal: 22,
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: greenColor, width: 1),
-                    ),
-                    child: const Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        "Follow Up",
-                      ),
-                    ),
-                  ),
-                ),
-                Tab(
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 8,
-                      horizontal: 22,
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: greenColor, width: 1),
-                    ),
-                    child: const Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        "Reservasi",
-                      ),
-                    ),
-                  ),
-                ),
-                Tab(
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 8,
-                      horizontal: 22,
-                    ),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: greenColor, width: 1),
-                    ),
-                    child: const Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        "Booking",
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-
-            // tab bar view here
-
-            Expanded(
-              child: TabBarView(
-                controller: _tabController,
-                children: [
-                  ListView(
-                    padding: EdgeInsets.symmetric(horizontal: defaultMargin),
-                    children: const [
-                      LeadCard(),
-                      LeadCard(),
-                      LeadCard(),
-                      LeadCard(),
-                    ],
-                  ),
-                  ListView(
-                    padding: EdgeInsets.symmetric(horizontal: defaultMargin),
-                    children: const [
-                      LeadCard(),
-                      LeadCard(),
-                      LeadCard(),
-                      LeadCard(),
-                    ],
-                  ),
-                  ListView(
-                    padding: EdgeInsets.symmetric(horizontal: defaultMargin),
-                    children: const [
-                      LeadCard(),
-                      LeadCard(),
-                      LeadCard(),
-                      LeadCard(),
-                    ],
-                  ),
-                  ListView(
-                    padding: EdgeInsets.symmetric(horizontal: defaultMargin),
-                    children: const [
-                      LeadCard(),
-                      LeadCard(),
-                      LeadCard(),
-                      LeadCard(),
-                    ],
-                  ),
-                  ListView(
-                    padding: EdgeInsets.symmetric(horizontal: defaultMargin),
-                    children: const [
-                      LeadCard(),
-                      LeadCard(),
-                      LeadCard(),
-                      LeadCard(),
-                    ],
-                  ),
-                  ListView(
-                    padding: EdgeInsets.symmetric(horizontal: defaultMargin),
-                    children: const [
-                      LeadCard(),
-                      LeadCard(),
-                      LeadCard(),
-                      LeadCard(),
-                    ],
-                  ),
-                ],
-              ),
-            ),
+            tabBar(),
+            tabBarView(),
           ],
         ),
       ),
