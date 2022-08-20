@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:varana_v2/pages/ui/sales/main_page.dart';
 import 'package:varana_v2/pages/ui/sign_in_page.dart';
 import 'package:varana_v2/pages/ui/splash_page.dart';
-import 'package:varana_v2/shares/theme.dart';
+import 'package:varana_v2/shared/theme.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:varana_v2/shares/theme.dart';
-import 'package:varana_v2/shares/variables.dart';
+import 'package:varana_v2/shared/theme.dart';
+import 'package:varana_v2/shared/variables.dart';
 
 class FeatureItem extends StatelessWidget {
   final String title;
@@ -30,7 +30,7 @@ class FeatureItem extends StatelessWidget {
             Icon(
               icon,
               color: greenColor,
-              size: 40,
+              size: 28,
             ),
             const SizedBox(
               height: 8,

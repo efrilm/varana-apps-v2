@@ -1,15 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:varana_v2/shares/theme.dart';
-import 'package:varana_v2/shares/variables.dart';
+import 'package:varana_v2/shared/theme.dart';
+import 'package:varana_v2/shared/variables.dart';
 
 class QueueItem extends StatelessWidget {
-  final String imageUrl;
-  final String name;
-
   const QueueItem({
     Key? key,
-    required this.imageUrl,
-    required this.name,
   }) : super(key: key);
 
   @override
@@ -34,7 +29,7 @@ class QueueItem extends StatelessWidget {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               image: DecorationImage(
-                image: AssetImage(imageUrl),
+                image: AssetImage(icProfile),
               ),
             ),
           ),
@@ -42,7 +37,7 @@ class QueueItem extends StatelessWidget {
             height: 10,
           ),
           Text(
-            name,
+            "Ranum Jihanes",
             style: headingTextStyle.copyWith(
               fontSize: 12,
               color: greenColor,

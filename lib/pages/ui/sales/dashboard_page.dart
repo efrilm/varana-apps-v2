@@ -5,10 +5,11 @@ import 'package:varana_v2/pages/widgets/custom_text_form_field.dart';
 import 'package:varana_v2/pages/widgets/divider.dart';
 import 'package:varana_v2/pages/widgets/feature_item.dart';
 import 'package:varana_v2/pages/widgets/home_item.dart';
+import 'package:varana_v2/pages/widgets/home_lead_item.dart';
 import 'package:varana_v2/pages/widgets/page_title.dart';
 import 'package:varana_v2/pages/widgets/queue_item.dart';
-import 'package:varana_v2/shares/theme.dart';
-import 'package:varana_v2/shares/variables.dart';
+import 'package:varana_v2/shared/theme.dart';
+import 'package:varana_v2/shared/variables.dart';
 
 class SalesDashboardPage extends StatelessWidget {
   const SalesDashboardPage({Key? key}) : super(key: key);
@@ -350,27 +351,14 @@ class SalesDashboardPage extends StatelessWidget {
                   left: defaultMargin,
                 ),
                 child: Row(
-                  children: [
-                    QueueItem(
-                      imageUrl: icProfile,
-                      name: 'Ranum Jihanes',
-                    ),
-                    QueueItem(
-                      imageUrl: icProfile,
-                      name: 'Ranum Jihanes',
-                    ),
-                    QueueItem(
-                      imageUrl: icProfile,
-                      name: 'Ranum Jihanes',
-                    ),
-                    QueueItem(
-                      imageUrl: icProfile,
-                      name: 'Ranum Jihanes',
-                    ),
-                    QueueItem(
-                      imageUrl: icProfile,
-                      name: 'Ranum Jihanes',
-                    ),
+                  children: const [
+                    QueueItem(),
+                    QueueItem(),
+                    QueueItem(),
+                    QueueItem(),
+                    QueueItem(),
+                    QueueItem(),
+                    QueueItem(),
                   ],
                 ),
               ),
@@ -387,32 +375,17 @@ class SalesDashboardPage extends StatelessWidget {
           vertical: 30,
         ),
         child: Column(
-          children: [
-            const PageTitle(
+          children: const [
+            PageTitle(
               title: 'Recently Leads',
               isView: false,
             ),
-            const SizedBox(
+            SizedBox(
               height: 15,
             ),
-            HomeLeadItem(
-              name: 'Felicia Arnold',
-              status: 'New',
-              date: '12 July 2022 18:20',
-              imageUrl: icProfile,
-            ),
-            HomeLeadItem(
-              name: 'Felicia Arnold',
-              status: 'New',
-              date: '12 July 2022 18:20',
-              imageUrl: icProfile,
-            ),
-            HomeLeadItem(
-              name: 'Felicia Arnold',
-              status: 'New',
-              date: '12 July 2022 18:20',
-              imageUrl: icProfile,
-            ),
+            HomeLeadItem(),
+            HomeLeadItem(),
+            HomeLeadItem(),
           ],
         ),
       );

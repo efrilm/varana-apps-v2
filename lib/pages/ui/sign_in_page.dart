@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:varana_v2/pages/widgets/custom_button.dart';
 import 'package:varana_v2/pages/widgets/custom_text_form_field.dart';
-import 'package:varana_v2/shares/theme.dart';
-import 'package:varana_v2/shares/variables.dart';
+import 'package:varana_v2/shared/theme.dart';
+import 'package:varana_v2/shared/variables.dart';
 
 class SignInPage extends StatelessWidget {
   const SignInPage({Key? key}) : super(key: key);

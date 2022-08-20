@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:varana_v2/shares/theme.dart';
-import 'package:varana_v2/shares/variables.dart';
+import 'package:varana_v2/shared/theme.dart';
+import 'package:varana_v2/shared/variables.dart';
 
 class GreenButton extends StatelessWidget {
   final Function() onPressed;

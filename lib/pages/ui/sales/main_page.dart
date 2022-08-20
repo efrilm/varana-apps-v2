@@ -3,7 +3,7 @@ import 'package:varana_v2/pages/ui/sales/account_page.dart';
 import 'package:varana_v2/pages/ui/sales/dashboard_page.dart';
 import 'package:varana_v2/pages/ui/sales/lead_page.dart';
 import 'package:varana_v2/pages/ui/sales/visit_page.dart';
-import 'package:varana_v2/shares/theme.dart';
+import 'package:varana_v2/shared/theme.dart';
 
 class SalesMainPage extends StatefulWidget {
   const SalesMainPage({Key? key}) : super(key: key);

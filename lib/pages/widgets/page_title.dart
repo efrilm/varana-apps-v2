@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:varana_v2/shares/theme.dart';
+import 'package:varana_v2/shared/theme.dart';
 
 class PageTitle extends StatelessWidget {
   final String title;
